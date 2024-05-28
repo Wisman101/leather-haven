@@ -7,9 +7,9 @@ import Button from '../button/button.component';
 
 const ProductCard = ({ product }) => {
     const { name, price, imageUrl } = product;
-    const { addItemTocart } = useContext(CartContext)
+    const { addItemToCart } = useContext(CartContext)
     
-    const addProductToCart = () => addItemTocart(product)
+    const addProductToCart = () => addItemToCart(product)
 
     return (
     <div className='product-card-container'>
