@@ -1,4 +1,4 @@
-import CategoriesList from "../../components/categories-list/categories-list.component";
+import Directory from "../../components/directory/directory.component";
 
 const Home = () => {
 
@@ -30,7 +30,7 @@ const Home = () => {
     }
   ]
   return (
-    <CategoriesList categories={ categories } />
+    <Directory categories={ categories } />
   );
 }
 
