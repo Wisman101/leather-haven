@@ -1,5 +1,5 @@
-import { Fragment, useContext } from "react";
-import { Outlet, Link } from "react-router-dom"
+import { useContext } from "react";
+import { Outlet } from "react-router-dom"
 
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import { ReactComponent as CrwnLogo } from '../../assets/crown.svg'
@@ -23,7 +23,7 @@ const Navigation = () => {
                 <CrwnLogo className="logo" />
             </LogoContainer>
             <NavLinks>
-                <NavLink className="nav-link" to={'./shop'}>
+                <NavLink to={'./shop'}>
                     SHOP
                 </NavLink>
                 {CurrentUser ? (
